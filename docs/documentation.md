@@ -9,33 +9,16 @@ Developed by Peter Skelsey: peter.skelsey@hutton.ac.uk
 
 # Table of Contents
 * [Background](#background)
-  * [Climate data](#climate-data)
-  * [Crop data](#crop-data)
 * [Basic operation](#basic-operation)
-* [Model Tab](#model-tab)
+* [Develop your forecast tool](#model-tab)
   * [Upload your data](#upload-your-data)
-  * [Fit a model](#fit-a-model)
-  * [Adjust the plot](#adjust-the-plot)
-  * [Save your fit results](#save-your-fit-results)
-* [Climate tab](#climate-tab)
-  * [Climate and crop panel](#climate-and-crop-panel)
-  * [Dispersal panel](#dispersal-panel)
-    * [Choose the type of dispersal](#choose-the-type-of-dispersal)
-    * [Set to no dispersal](#set-to-no-dispersal)
-  * [Plots panel](#plots-panel)
-    * [Making maps](#making-maps)
-    * [Plotting projected values](#plotting-projected-values)
-    * [Saving results](#saving-results)
+  * [Train and test an algorithm](#train-and-test-an-algorithm)
+  * [Check your results](#save-your-fit-results)
+  * [Make future predictions](#adjust-the-plot)
   
-
+  
 # Background
 The app uses gridded crop distribution and climate change data, and allows you to build a weather-dependent model from your own data that is a function of one- or two-climate variables, and apply it in selected crop grid cells under various climate change scenarios. A unique feature of the app is the ability to define spatial relationships (e.g. risk of pest or pathogen dispersal) among grid cells via various dispersal options. These spatial relationships can be used to modify projected values. 
-
-### Climate data
-The app uses raw seasonal 12 km gridded (65 x 112 cells) climate data from the UK Met Office Climate Projections database ([UKCP18](http://ukclimateprojections.metoffice.gov.uk/)) 12-member ensemble of regional projections for the emissions scenario RCP8.5. These data provide the best estimates for modelling and summarising the potential effects of future climates on spatial processes in GB as they have full spatial and temporal coherence. This is important when analysing climate risks at different geographical locations at the same time and if there is physical connection between the locations. RCP8.5 is a high emissions scenario that is frequently referred to as 'business as usual', meaning it is the likely outcome if society does not make concerted efforts to reduce greenhouse gas emissions. The regional projections provide 12 equally plausible snapshots of climate change; i.e. a range of 12 future values are provided for each climate variable in each grid cell. UKMO baseline data for 1981-2000 are also included for comparison, i.e. for computing a change relative to the current climate.
-
-### Crop data
-Polygon data defining the spatial coverage of crops and land-use types were derived from [IACS](https://ec.europa.eu/info/food-farming-fisheries/key-policies/common-agricultural-policy/financing-cap/controls-and-transparency/managing-payments_en) and [JACS](https://www2.gov.scot/Topics/Statistics/Browse/Agriculture-Fisheries/PubFinalResultsJuneCensus). These data cover Scotland only. The vector data were rasterised to 12 km grids matching the resolution of the climate change data. Information on the location and area of each crop is available for use in the app.
 
 # Basic operation
 *Tabs*: The app has two 'tabs' - 'Model' and 'Climate.' To switch from one tab to the other just click on their name.  
@@ -48,17 +31,10 @@ Polygon data defining the spatial coverage of crops and land-use types were deri
 *List box*: Click on desired option.
 Note: Selection of certain options will result in others becoming 'greyed out' and unavailable to edit. This is normal and is there to ensure conflicting choices are not made.
 
-# Model Tab
-The risk models you create here can be a function of one- or two-weather variables, g = f(x) or g = f(x,y); e.g. yield production as a function of temperature, infection risk as a function of temperature and humidity, etc. Note that if you do not create a model here, you will not be able to produce any climate change projections.
-
-<p align="left">
-  <img src="https://github.com/pskelsey/4C-model-lite/blob/gh-pages/riskModelScreenshot.PNG">
-</p>
-
 ### Upload your data
 Use the 'No. of variables' switch to select a model that is a function of one- or two-weather variables. Certain options will become greyed out and unavailable depending on what you select here. Click the 'Load data' button to upload your data. This will open up a file selection dialog box. Your datafile must be an ASCII delimited text file or CSV file with the data stored in columns. If your data have one weather variable, this should be stored in the first column and your 'response' or dependent variable in the second. If your data have two weather variables, these should be stored in the first two columns and your response variable in the third. Replicates should be placed in rows. If your file does not meet these requirements then a warning will occur. Two example datasets ('exampleData1Var.txt & exampleData2Var.txt') have been provided to help you get you up and running. Your data will be plotted automatically once it has loaded successfully, and the axis limits of the plot pane will adjust according to the lower and upper values in your data. You can change
 
-### Fit a model
+### Train and test an algorithm
 Use the 'Type of fit' switch to select a polynomial or spline fit. To fit a polynomial to your data, select the degree of the polynomial curve p(x) or surface p(x,y) using the 'degree-x' and 'degree-y' spinners. The method of least squares (linear or nonlinear) is used used for fitting. The spline option uses spline interpolation to fit a curve or surface to your data. If you have selected one variable, a smoothing spline model will be fit to your data with the option to adjust the smoothness of the fit using the 'smoothing' numeric field (a value between 0 and 1). If you have selecte two variables then thin-plate spline interpolation will be used and the option for adjusting the smoothness will be greyed out. Click the 'Fit model' button to fit the model. The model will be plotted automatically together with your data.The goodness of fit statistics will be displayed in the 'GoF'pane. 
 
 ### Adjust the plot
