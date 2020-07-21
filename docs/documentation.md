@@ -1,6 +1,8 @@
 <p align="left">
-  <img width="212" height="166"  src="https://github.com/pskelsey/findOUT/blob/gh-pages/findOUT_logo.png">
+<img width="221" height="275"  src="https://github.com/pskelsey/findOUT/blob/gh-pages/findOUT_logo.png">
 </p>
+   
+Developed by Peter Skelsey: peter.skelsey@hutton.ac.uk
 
 
 # DOCUMENTATION
