@@ -25,7 +25,7 @@ Daily weather data corresponding to 200 disease outbreaks has been loaded. The t
 Information from crop disease surveillance programs and outbreak investigations provide real-world data about the drivers of infection epidemics events. In many cases, however, only information on outbreaks is collected and data from surrounding healthy crops is omitted. Use of such data to develop models to forecast risk of disease is therefore problematic, as information relating to the ‘no-risk’ status of crops is missing. The task then is to explore these data using anomaly detection algorithms to find the feature values (e.g., weather variables) most commonly associated with disease occurrence and those that are less common or anomalous, in order to derive rules that can be used to predict risk of disease (or no risk) in the future.
 
 ### Installation and loading
-To download the app for the first time, use the green "Clone or download" button to obtain a ZIP file:
+To download the app for the first time, use the green "Code" button and then select 'download ZIP file' from the dropdown menu:
 
 <p align="left">
   <img src="https://github.com/pskelsey/findOUT/blob/gh-pages/downloadScreenshot.png">
