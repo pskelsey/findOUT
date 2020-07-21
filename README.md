@@ -25,7 +25,7 @@ Daily weather data corresponding to 200 disease outbreaks has been loaded. The t
 Information from crop disease surveillance programs and outbreak investigations provide real-world data about the drivers of infection epidemics events. In many cases, however, only information on outbreaks is collected and data from surrounding healthy crops is omitted. Use of such data to develop models to forecast risk of disease is therefore problematic, as information relating to the ‘no-risk’ status of crops is missing. The task then is to explore these data using anomaly detection algorithms to find the feature values (e.g., weather variables) most commonly associated with disease occurrence and those that are less common or anomalous, in order to derive rules that can be used to predict risk of disease (or no risk) in the future.
 
 ### Installation and loading
-To download the app for the first time, use the green "Code" button and then select 'download ZIP file' from the dropdown menu:
+To download the app for the first time, click the green "Code" button and then select 'download ZIP' from the dropdown menu:
 
 <p align="left">
   <img src="https://github.com/pskelsey/findOUT/blob/gh-pages/downloadScreenshot.png">
@@ -36,7 +36,7 @@ Then unzip the contents. There are two executable files you can run to install t
 NOTE: When the app is loading the splash screen may disappear for a brief interval before the app loads - there is no need to try and load it again, just give it a few seconds. The GUI is 'responsive' and can be scaled to any size, however this will change the layout of the controls. 
 
 ### Documentation
-A full guide on how to use the app to perform climate change risk assessments is provided in the [Documentation.md](https://github.com/pskelsey/4C-Lite-model/blob/master/docs/documentation.md)
+A full guide on how to use the app to build your own crop disease forecasting tool is provided in the [Documentation.md](https://github.com/pskelsey/findOUT/blob/master/docs/documentation.md)
 
 ### References
 [Skelsey, P. 2020. Forecasting risk of crop disease with anomaly detection algorithms. Phytopathology, in press.
