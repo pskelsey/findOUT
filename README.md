@@ -5,7 +5,7 @@
 Developed by Peter Skelsey: peter.skelsey@hutton.ac.uk
 
 ## Basic overview
-A standalone desktop app for developing your own crop disease forecasting tools using anomaly detection algorithms
+A standalone desktop app for developing your own crop disease forecasting tools using anomaly detection algorithms.
 * Upload your own two-dimensional data (two predictor variables), or use our example data.
 * Choose an anomaly detection algorithm.
 * Set the fraction of inliers required - this determines the frequency of risk alerts.
