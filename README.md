@@ -15,10 +15,10 @@ A desktop app for developing your own crop disease forecasting tools using anoma
 * Make future predictions.
 
 ## Example
-Daily weather data corresponding to 200 disease outbreaks has been loaded. The two predictor variables are (1) the number of hours of relative humidity >90% per day, and (2) the daily minimum temperature. The data span a 28-day period prior to the date each outbreak was reported. A one-class support vector machine has been trained and tested using 10-fold cross-validation. If a risk alert is issued on any day in the 28-day window leading up to the outbreak of disease, then that is considered a successful forecast. The performance results give the percentage accuracy in forecasting outbreaks and the percentage of days on which an alert was issued in each of the test folds. The decision bounadry is shown in black: any future instances that fall within this boundary will trigger a risk alert, otherwise no alert is issued. The performance results are saved to the root directory.
+Daily weather data corresponding to 200 disease outbreaks has been loaded. The two predictor variables are (1) the number of hours of relative humidity >90% per day, and (2) the daily minimum temperature. The data span a 28-day period prior to the date each outbreak was reported, and are used to relate weather conditions for infection to the dates at which disease was observed in the crop. A one-class support vector machine has been trained and tested using 10-fold cross-validation. It has identified the envelope of weather conditions most commonly associated with disease (black markers) and those that are anomalous (blue markers). Any events that fall inside the decision boundary delineated by the black markers will trigger a risk alert, otherwise no alert is issued. If a risk alert is issued on any day in the 28-day window leading up to the outbreak of disease, then that is considered a successful forecast. The performance results give the percentage accuracy in forecasting outbreaks and the percentage of days on which an alert was issued in each of the test folds. The results are saved automatically to the root directory.
 
 <p align="left">
-  <img src="https://github.com/pskelsey/4C-model-lite/blob/gh-pages/screenshot.PNG">
+  <img src="https://github.com/pskelsey/findOUT/blob/gh-pages/screenshot.PNG">
 </p>
 
 ## Motivation
