@@ -3,7 +3,7 @@
 </p>
 <p align="center">   
 Developed by [Peter Skelsey]
-<peter.skelsey@hutton.ac.uk>
+(peter.skelsey@hutton.ac.uk)
 </p>
 
 ## Basic overview
