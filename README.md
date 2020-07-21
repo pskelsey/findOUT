@@ -2,7 +2,7 @@
 <img width="221" height="275"  src="https://github.com/pskelsey/findOUT/blob/gh-pages/findOUT_logo.png">
 </p>
 <p align="center">   
-Developed by **[Peter Skelsey]<peter.skelsey@hutton.ac.uk>**, James Hutton Institute, Dundee.
+Developed by [Peter Skelsey]<peter.skelsey@hutton.ac.uk>, James Hutton Institute, Dundee.
 </p>
 
 ## Basic overview
