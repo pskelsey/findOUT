@@ -2,10 +2,8 @@
 <img width="221" height="275"  src="https://github.com/pskelsey/findOUT/blob/gh-pages/findOUT_logo.png">
 </p>
   
-<div style="text-align:center">
 Developed by [**Peter Skelsey**](mailto:peter.skelsey@hutton.ac.uk?subject=findOUT), James Hutton Institute, Dundee
-</div>
-
+<p style="text-align: center">def 456</p>
 
 ## Basic overview
 A standalone desktop app for developing your own crop disease forecasting tools using anomaly detection algorithms.
