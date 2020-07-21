@@ -3,7 +3,9 @@
 </p>
   
 Developed by [**Peter Skelsey**](mailto:peter.skelsey@hutton.ac.uk?subject=findOUT), James Hutton Institute, Dundee
-<p style="text-align: center">def 456</p>
+<p align="center">
+def 456
+</p>
 
 ## Basic overview
 A standalone desktop app for developing your own crop disease forecasting tools using anomaly detection algorithms.
