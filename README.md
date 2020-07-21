@@ -3,7 +3,7 @@
 </p>
   
 Developed by [**Peter Skelsey**](mailto:peter.skelsey@hutton.ac.uk?subject=findOUT), James Hutton Institute, Dundee
-
+{: .gitlab-purple}
 
 
 ## Basic overview
