@@ -1,5 +1,5 @@
 <p align="left">
-<img width="212" height="166"  src="https://github.com/pskelsey/4C-model-lite/blob/gh-pages/4CLogo.png">
+<img width="212" height="166"  src="https://github.com/pskelsey/findOUT/blob/gh-pages/icon_big.png">
 </p>
    
 # findOUT
