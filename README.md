@@ -4,7 +4,7 @@
   
 Developed by [**Peter Skelsey**](mailto:peter.skelsey@hutton.ac.uk?subject=findOUT), James Hutton Institute, Dundee
 <p align="center">
-[**Peter Skelsey**](mailto:peter.skelsey@hutton.ac.uk?subject=findOUT)
+[Peter Skelsey](mailto:peter.skelsey@hutton.ac.uk?subject=findOUT)
 </p>
 
 ## Basic overview
