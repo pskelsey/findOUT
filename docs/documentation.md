@@ -10,11 +10,10 @@ Developed by Peter Skelsey: peter.skelsey@hutton.ac.uk
 ## Table of Contents
 * [Background](#background)
 * [Basic operation](#basic-operation)
-* [Develop your forecast tool](#model-tab)
-  * [Upload your data](#upload-your-data)
-  * [Train and test an algorithm](#train-and-test-an-algorithm)
-  * [Check your results](#chek-your-results)
-  * [Make future predictions](#adjust-the-plot)
+* [Upload your data](#upload-your-data)
+* [Train and test an algorithm](#train-and-test-an-algorithm)
+* [Check your results](#chek-your-results)
+* [Make future predictions](#adjust-the-plot)
   
   
 ## Background
