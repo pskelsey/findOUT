@@ -1,9 +1,8 @@
-<p align="center">
+<p align="left">
 <img width="221" height="275"  src="https://github.com/pskelsey/findOUT/blob/gh-pages/findOUT_logo.png">
 </p>
-<p align="center">   
-Developed by Peter Skelsey: peter.skelsey@hutton.ac.uk
-</p>
+  
+Developed by [**Peter Skelsey**](mailto:peter.skelsey@hutton.ac.uk?subject=findOUT), James Hutton Institute, Dundee
 
 # USER GUIDE
 
@@ -17,7 +16,7 @@ Developed by Peter Skelsey: peter.skelsey@hutton.ac.uk
   
   
 ## Background
-The app uses gridded crop distribution and climate change data, and allows you to build a weather-dependent model from your own data that is a function of one- or two-climate variables, and apply it in selected crop grid cells under various climate change scenarios. A unique feature of the app is the ability to define spatial relationships (e.g. risk of pest or pathogen dispersal) among grid cells via various dispersal options. These spatial relationships can be used to modify projected values. 
+The app uses anomaly detection algorithms to determine a decision boundary separating outliers and inliers in your data. Any instances that fall inside the decision boundary that contains the least anomalous events will trigger a risk alert. least anomalous values in your datagridded crop distribution and climate change data, and allows you to build a weather-dependent model from your own data that is a function of one- or two-climate variables, and apply it in selected crop grid cells under various climate change scenarios. A unique feature of the app is the ability to define spatial relationships (e.g. risk of pest or pathogen dispersal) among grid cells via various dispersal options. These spatial relationships can be used to modify projected values. 
 
 ## Basic operation
 *Tabs*: The app has two 'tabs' - 'Model' and 'Climate.' To switch from one tab to the other just click on their name.  
