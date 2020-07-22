@@ -6,9 +6,9 @@ Developed by [**Peter Skelsey**](mailto:peter.skelsey@hutton.ac.uk?subject=findO
 
 ## Basic overview
 A standalone desktop app for developing your own crop disease forecasting tools using anomaly detection algorithms.
-* Upload your own two-dimensional data (two predictor variables), or use our example data.
+* Upload your own data (2 predictor variables) or use our example data.
 * Choose an anomaly detection algorithm.
-* Set the fraction of inliers required - this determines the frequency of risk alerts.
+* Set the fraction of inliers required.
 * Train and test your algorithm using k-fold cross-validation.
 * Results for forecast accuracy and frequency of alerts issued are automatically saved.
 * View the decision boundary.
