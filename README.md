@@ -10,7 +10,7 @@ A standalone desktop app for developing your own disease risk forecasting tool u
 * Choose an anomaly detection algorithm.
 * Set the fraction of inliers required.
 * Train and test your algorithm using *k*-fold cross-validation.
-* Results for forecast accuracy and frequency of alerts issued are automatically saved.
+* Save your results for forecast accuracy and frequency of alerts issued.
 * View the decision boundary.
 * Make future predictions.
 
