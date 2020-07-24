@@ -36,7 +36,7 @@ Then unzip the contents. There are two executable files you can run to install t
 NOTE: When the app is loading the splash screen may disappear for a brief interval before the app opens - there is no need to try and load it again, just give it a few seconds. The GUI is 'responsive' and can be scaled to any size, however this will change the layout of the controls. 
 
 ### Documentation
-A full guide on how to use the app to build your own crop disease forecasting tool is provided in the [Documentation.md](https://github.com/pskelsey/findOUT/blob/master/docs/documentation.md)
+A full guide on how to use the app to build your own crop disease forecasting tool is provided in the [Documentation](https://github.com/pskelsey/findOUT/blob/master/docs/documentation.md)
 
 ### References
 [Skelsey, P. 2020. Forecasting risk of crop disease with anomaly detection algorithms. Phytopathology, ~in press~.
