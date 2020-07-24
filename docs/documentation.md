@@ -9,34 +9,35 @@ Developed by [**Peter Skelsey**](mailto:peter.skelsey@hutton.ac.uk?subject=findO
 ## Table of Contents
 * [Background](#background)
 * [Basic operation](#basic-operation)
-* [Upload your data](#upload-your-data)
+* [Format your data](#format-your-data)
+  * [Upload your data](#upload-your-data)
 * [Train and test an algorithm](#train-and-test-an-algorithm)
 * [Check your results](#chek-your-results)
 * [Make future predictions](#adjust-the-plot)
   
   
 ## Background
-The app uses anomaly detection algorithms to determine a decision boundary separating outliers and inliers in your data. Any instances that fall inside the decision boundary that contains the least anomalous events will trigger a risk alert. least anomalous values in your datagridded crop distribution and climate change data, and allows you to build a weather-dependent model from your own data that is a function of one- or two-climate variables, and apply it in selected crop grid cells under various climate change scenarios. A unique feature of the app is the ability to define spatial relationships (e.g. risk of pest or pathogen dispersal) among grid cells via various dispersal options. These spatial relationships can be used to modify projected values. 
+The app uses unsupervised anomaly detection algorithms to determine a decision boundary separating outliers and inliers in your data. Any future instances that fall inside the decision boundary will trigger a risk alert. See the reference at the bottom of the [README](https://github.com/pskelsey/findOUT/blob/master/README.md) for mathematical details on each algorithm.
 
 ## Basic operation
-*Tabs*: The app has two 'tabs' - 'Model' and 'Climate.' To switch from one tab to the other just click on their name.  
-*Switches*: Drag the circluar switch to the left or right, or just click in the empty space.  
 *Buttons*: Click the button.
-*Drop down lists*: Click on the downward pointing arrow to reveal the list. Click to select a list member.
+*Check-boxes*: Check the box.
+*Switches*: Drag the circluar switch to the left or right.
+*Knobs*: Drag the control around to your selection, or click on your selection. 
 *Numeric fields*: Click in the white box to change the numerical value. Then hit enter or click outside the box.  
-*Knobs*: Drag the control to around your selection, or click on your selection.  
-*Spinners*: Use the up and down arrows to increase a value by increments.
-*List box*: Click on desired option.
-Note: Selection of certain options will result in others becoming 'greyed out' and unavailable to edit. This is normal and is there to ensure conflicting choices are not made.
+Note: Certain options may be 'greyed out' and unavailable to ensure conflicting choices are not made. For example, you cannot hit the Run button until you have used the Load button to upload your data.
 
-## Upload your data
-Use the 'No. of variables' switch to select a model that is a function of one- or two-weather variables. Certain options will become greyed out and unavailable depending on what you select here. Click the 'Load data' button to upload your data. This will open up a file selection dialog box. Your datafile must be an ASCII delimited text file or CSV file with the data stored in columns. If your data have one weather variable, this should be stored in the first column and your 'response' or dependent variable in the second. If your data have two weather variables, these should be stored in the first two columns and your response variable in the third. Replicates should be placed in rows. If your file does not meet these requirements then a warning will occur. Two example datasets ('exampleData1Var.txt & exampleData2Var.txt') have been provided to help you get you up and running. Your data will be plotted automatically once it has loaded successfully, and the axis limits of the plot pane will adjust according to the lower and upper values in your data. You can change
+## Format your data
+Your data must be stored in an excel file (.xls or .xlsx). You must have two predictor variables, each stored in a separate worksheet in your excel file. Name the worksheets 'var1' and 'var2'. Data corresponding to different events / objects should be stored in rows, and measurements corresponding to the same event should be stored in columns. For example, if you have data on 5000 events where for each event you have 10 measurements of predictor variable A and predictor variable B, then worksheets var1 and var2 will both contain a 5000 x 10 matrix of numbers. Missing data must be entered as 'NaN' (without the quotes) or left as an empty cell. There should be no text entries anywhere in your excel file, i.e., no headers and no text entires for missing data. You can, however, use 'Inf' (without the quotes) to represent infinity. If your file does not meet these requirements then a warning will occur. An example dataset ('exampleWeatherData.txt') has been provided to help you get you up and running. This contains synthetic data for 200 crop disease outbreaks, where for each outbreak there are 28 days Your data will be plotted automatically once it has loaded successfully, and the axis limits of the plot pane will adjust according to the lower and upper values in your data. 
+
+### Upload your data
+Click the 'Load data' button to upload your data. This will open up a file selection dialog box. 
 
 ## Train and test an algorithm
-Use the 'Type of fit' switch to select a polynomial or spline fit. To fit a polynomial to your data, select the degree of the polynomial curve p(x) or surface p(x,y) using the 'degree-x' and 'degree-y' spinners. The method of least squares (linear or nonlinear) is used used for fitting. The spline option uses spline interpolation to fit a curve or surface to your data. If you have selected one variable, a smoothing spline model will be fit to your data with the option to adjust the smoothness of the fit using the 'smoothing' numeric field (a value between 0 and 1). If you have selecte two variables then thin-plate spline interpolation will be used and the option for adjusting the smoothness will be greyed out. Click the 'Fit model' button to fit the model. The model will be plotted automatically together with your data.The goodness of fit statistics will be displayed in the 'GoF'pane. 
+Use the 'z-score' check-box if you want to standardize your predictor variables to have mean 0 and scaled to have standard deviation 1. This can improve predictive performance. Slide the switch below to select 5-fold or 10-fold cross-validation. Use the circular 'Algorithm' knob to select one of the five anomaly detection algorithms: rcov = robust covariance, ockm = one-class *k*-means, gmm = Gaussian mixture model, kde = kernel density estimation, and ocsvm = one-class support vector machine. Set the fraction of inliers required using the 'fracIn' numeric field. The 'seed' numeric field is used to initialize the random number generator that divides your data into training and test folds: this ensures you can reproduce your results (using the same seed value) and test the effects of different splits (different seed values). Then click the 'Run' button to train and test your algorithm. The results of the cross-validation are given in the 'Performance' display panel (see below). Your selected algorithm is then 'finalized' by retraining using all the data (no cross-validation) and used to plot the inliers (black) and outliers (blue) in your data. The zone of black inliers delineates the decision boundary: any events that fall within that envelope of conditions will trigger a risk alert.
 
 ## Check your results
-Use the 'x-range', 'y-range' and 'z-range' numeric fields to visualise or extrapolate your model across a different range of values on a particular axis. The format required is min:max, e.g. to plot from 0 to 10 you would enter 0:10. Then hit Return on your keyboard or click your mouse outside of the numeric field. Note that this is for visualisation purposes only and does not affect model fit.
+The 'Performance' display panel underneath the plot pane provides the results of the *k*-fold cross-validation for each test fold. The 'acc' (accuracy) is the proportion of events/objects (rows in your data) that were successfully forecasted. Note that a successful forecast occurs when any pair of predictor variables for that event is classified as an inlier. So using the example provided for formatting your data if you have, for example, one of the measurements  Use the 'x-range', 'y-range' and 'z-range' numeric fields to visualise or extrapolate your model across a different range of values on a particular axis. The format required is min:max, e.g. to plot from 0 to 10 you would enter 0:10. Then hit Return on your keyboard or click your mouse outside of the numeric field. Note that this is for visualisation purposes only and does not affect model fit.
 
 ## Make future predictions
 Click the 'Save' button to open up a file save dialog box, where you can name your results file and save to any location. Note that for the poly option, details of the fit (formula, coefficients etc.) and the GoF statistics will be saved, but for spline only the GoF statistics will be saved, as this is considered a non-parametric fit.
