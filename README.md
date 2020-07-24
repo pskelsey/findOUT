@@ -39,7 +39,7 @@ NOTE: When the app is loading the splash screen may disappear for a brief interv
 A full guide on how to use the app to build your own crop disease forecasting tool is provided in the [Documentation](https://github.com/pskelsey/findOUT/blob/master/docs/documentation.md)
 
 ### References
-[Skelsey, P. 2020. Forecasting risk of crop disease with anomaly detection algorithms. Phytopathology, ~in press~.
+[Skelsey, P. 2020. Forecasting risk of crop disease with anomaly detection algorithms. Phytopathology, *in press*.
 
 ### License
 The MIT License (MIT) 2020 - Peter Skelsey. For more details, please have a look at the [LICENSE](https://github.com/pskelsey/findOUT/blob/master/LICENSE).
