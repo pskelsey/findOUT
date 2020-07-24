@@ -20,11 +20,11 @@ Developed by [**Peter Skelsey**](mailto:peter.skelsey@hutton.ac.uk?subject=findO
 The app uses unsupervised anomaly detection algorithms to determine a decision boundary separating outliers and inliers in your data. Any future instances that fall inside the decision boundary will trigger a risk alert. See the reference at the bottom of the [README](https://github.com/pskelsey/findOUT/blob/master/README.md) for mathematical details on each algorithm.
 
 ## Basic operation
-*Buttons*: Click the button.
-*Check-boxes*: Check the box.
-*Switches*: Drag the circluar switch to the left or right.
-*Knobs*: Drag the control around to your selection, or click on your selection.
-*Numeric fields*: Click in the white box to change the numerical value. Then hit enter or click outside the box.
+*Buttons*: Click the button.  
+*Check-boxes*: Check the box.  
+*Switches*: Drag the circluar switch to the left or right.  
+*Knobs*: Drag the control around to your selection, or click on your selection.  
+*Numeric fields*: Click in the white box to change the numerical value. Then hit enter or click outside the box.  
 
 Note: Certain options may be 'greyed out' and unavailable to ensure conflicting choices are not made. For example, you cannot hit the Run button until you have used the Load button to upload your data.
 
