@@ -13,7 +13,7 @@ Developed by [**Peter Skelsey**](mailto:peter.skelsey@hutton.ac.uk?subject=findO
   * [Upload your data](#upload-your-data)
 * [Train and test an algorithm](#train-and-test-an-algorithm)
 * [Check your results](#check-your-results)
-* [Make future predictions](#adjust-the-plot)
+* [Make future predictions](#make-future-predictions)
   
   
 ## Background
