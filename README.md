@@ -5,7 +5,7 @@
 Developed by [**Peter Skelsey**](mailto:peter.skelsey@hutton.ac.uk?subject=findOUT), James Hutton Institute, Dundee
 
 ## Basic overview
-A standalone desktop app for developing your own crop disease forecasting tools using anomaly detection algorithms.
+A standalone desktop app for developing your own forecasting tool using anomaly detection algorithms.
 * Upload your own data (2 predictor variables) or use our example data.
 * Choose an anomaly detection algorithm.
 * Set the fraction of inliers required.
@@ -22,16 +22,16 @@ Daily weather data corresponding to 200 disease outbreaks has been loaded. The t
 </p>
 
 ## Motivation
-Information from crop disease surveillance programs and outbreak investigations provide real-world data about the drivers of infection epidemics events. In many cases, however, only information on outbreaks is collected and data from surrounding healthy crops is omitted. Use of such data to develop models to forecast risk of disease is therefore problematic, as information relating to the ‘no-risk’ status of crops is missing. The task then is to explore these data using anomaly detection algorithms to find the feature values (e.g., weather variables) most commonly associated with disease occurrence and those that are less common or anomalous, in order to derive rules that can be used to predict risk of disease (or no risk) in the future.
+The app can be used for any 'unsupervised anomaly detection' problem, where you don't have 'labelled' data that identify normal and abnormal cases, but was inspired to help with the development of crop disease prediction models. This is because there is an abundance of data from crop disease surveillance programs and outbreak investigations that provide real-world information about the drivers of epidemics, but are unsuitable for the derivation of tools to forecast risk. Such data are unsuitable because only information on outbreaks is collected and data from surrounding healthy crops is omitted. It is therefore not possible to label the data as 'healthy' versus 'diseased,' and thus problematic to develop classifiers that can forecast risk / no-risk of disease. The task then is to explore these data using anomaly detection algorithms to find the feature values (e.g., weather variables) most commonly associated with disease occurrence and those that are less common or anomalous, in order to derive rules that can be used to predict risk of disease (or no risk) in the future. See the [Documentation.md] for information on how to set up your own data for use.     
 
 ### Installation and loading
-To download the app for the first time, click the green "Code" button and then select 'download ZIP' from the dropdown menu:
+The app is freely available to download and install on any dekstop PC. To download the app for the first time, click the green "Code" button and then select 'download ZIP' from the dropdown menu:
 
 <p align="left">
   <img src="https://github.com/pskelsey/findOUT/blob/gh-pages/downloadScreenshot.png">
 </p>
 
-Then unzip the contents. There are two executable files you can run to install this app - which one you choose depends on whether or not you have MATLAB installed on your computer. This is because the app was made in MATLAB and requires 'MATLAB Runtime' to work. MATLAB Runtime is a completely free, standalone set of shared libraries that enables the execution of MATLAB applications on computers that do not have MATLAB installed. This all happens 'behind the scenes' and once it is installed then MATLAB apps will run like any other piece of software, using the desktop shortcuts etc. provided. And then you can download and use as many of the thousands of available MATLAB apps as you like, free of charge. So, if you do not have MATLAB or an up-to-date version of Runtime installed (see [prerequisites](https://github.com/pskelsey/4C-Lite-model/blob/master/prerequisites.txt)) installed, then run 'findOUT_And_Runtime.exe' to install the app. This is a web-based installer that will download MATLAB Runtime to your computer and install the app, so you will need an internet connection. MATLAB Runtime requires approximately 1.7GB of disk space so it may take some time to install. If you already have MATLAB or an up-to-date version of Runtime, then run 'findOUT.exe' to install the app. If you already have this app and want to check for a new release, click on the 'release' button near the top of the page.
+Then unzip the contents. There are two executable files you can run to install this app - which one you choose depends on whether or not you have MATLAB installed on your computer. If you do not have a MATLAB license, or the version you have is not R2020a (see [prerequisites](https://github.com/pskelsey/4C-Lite-model/blob/master/prerequisites.txt)), then run 'findOUT_And_Runtime.exe' to install the app. This is a web-based installer that will simultaneously install the app and download 'MATLAB Runtime' to your computer. MATLAB Runtime is a completely free, standalone set of shared libraries that enables the execution of MATLAB applications on computers that do not have MATLAB installed. This all happens 'behind the scenes' and once it is installed then MATLAB apps will run like any other piece of software, using the desktop shortcuts etc. provided. Then you can download and use as many of the thousands of freely available MATLAB apps as you like. You will need an internet connection, and MATLAB Runtime requires approximately 1.7GB of disk space so it may take some time to install. If you already have MATLAB R2020a, then you can simply double click 'findOUT.exe' to run the app. To check for a new release of this app, click on the 'release' button near the top of the page.
 
 NOTE: When the app is loading the splash screen may disappear for a brief interval before the app opens - there is no need to try and load it again, just give it a few seconds. The GUI is 'responsive' and can be scaled to any size, however this will change the layout of the controls. 
 
@@ -39,7 +39,7 @@ NOTE: When the app is loading the splash screen may disappear for a brief interv
 A full guide on how to use the app to build your own crop disease forecasting tool is provided in the [Documentation.md](https://github.com/pskelsey/findOUT/blob/master/docs/documentation.md)
 
 ### References
-[Skelsey, P. 2020. Forecasting risk of crop disease with anomaly detection algorithms. Phytopathology, in press.
+[Skelsey, P. 2020. Forecasting risk of crop disease with anomaly detection algorithms. Phytopathology, ~in press~.
 
 ### License
 The MIT License (MIT) 2020 - Peter Skelsey. For more details, please have a look at the [LICENSE](https://github.com/pskelsey/findOUT/blob/master/LICENSE).
