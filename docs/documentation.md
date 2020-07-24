@@ -21,6 +21,7 @@ The app uses unsupervised anomaly detection algorithms to determine a decision b
 
 ## Basic operation
 *Buttons*: Click the button.
+
 *Check-boxes*: Check the box.
 *Switches*: Drag the circluar switch to the left or right.
 *Knobs*: Drag the control around to your selection, or click on your selection. 
