@@ -21,11 +21,11 @@ The app uses unsupervised anomaly detection algorithms to determine a decision b
 
 ## Basic operation
 *Buttons*: Click the button.
-
 *Check-boxes*: Check the box.
 *Switches*: Drag the circluar switch to the left or right.
 *Knobs*: Drag the control around to your selection, or click on your selection. 
 *Numeric fields*: Click in the white box to change the numerical value. Then hit enter or click outside the box.  
+
 Note: Certain options may be 'greyed out' and unavailable to ensure conflicting choices are not made. For example, you cannot hit the Run button until you have used the Load button to upload your data.
 
 ## Format your data
