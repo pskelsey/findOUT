@@ -1,5 +1,7 @@
-![findOUT_logo](https://user-images.githubusercontent.com/32124230/109950296-45269700-7cd4-11eb-96b5-14fcac8368ca.png)
-  
+<p align="left">
+<img width="212" height="166"  ![findOUT_logo](https://user-images.githubusercontent.com/32124230/109950296-45269700-7cd4-11eb-96b5-14fcac8368ca.png)>
+</p>
+
 Developed by [**Peter Skelsey**](mailto:peter.skelsey@hutton.ac.uk?subject=findOUT), James Hutton Institute, Dundee
 
 ## Basic overview
